@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01C3B4825BE92F600296C22 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C3B4725BE92F600296C22 /* RegistrationForm.swift */; };
 		F094529525BD878B00445C90 /* MiiingleNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094529425BD878B00445C90 /* MiiingleNetApp.swift */; };
 		F094529725BD878B00445C90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094529625BD878B00445C90 /* ContentView.swift */; };
 		F094529925BD878D00445C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F094529825BD878D00445C90 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F01C3B4725BE92F600296C22 /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
 		F094529125BD878B00445C90 /* MiiingleNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiiingleNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F094529425BD878B00445C90 /* MiiingleNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiiingleNetApp.swift; sourceTree = "<group>"; };
 		F094529625BD878B00445C90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F01C3B4625BE92AE00296C22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F01C3B4725BE92F600296C22 /* RegistrationForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F094528825BD878B00445C90 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +109,9 @@
 		F094529325BD878B00445C90 /* MiiingleNet */ = {
 			isa = PBXGroup;
 			children = (
-				F094529425BD878B00445C90 /* MiiingleNetApp.swift */,
 				F094529625BD878B00445C90 /* ContentView.swift */,
+				F01C3B4625BE92AE00296C22 /* Views */,
+				F094529425BD878B00445C90 /* MiiingleNetApp.swift */,
 				F094529825BD878D00445C90 /* Assets.xcassets */,
 				F094529D25BD878D00445C90 /* Persistence.swift */,
 				F09452A225BD878D00445C90 /* Info.plist */,
@@ -267,6 +278,7 @@
 			files = (
 				F094529E25BD878D00445C90 /* Persistence.swift in Sources */,
 				F09452A125BD878D00445C90 /* MiiingleNet.xcdatamodeld in Sources */,
+				F01C3B4825BE92F600296C22 /* RegistrationForm.swift in Sources */,
 				F094529725BD878B00445C90 /* ContentView.swift in Sources */,
 				F094529525BD878B00445C90 /* MiiingleNetApp.swift in Sources */,
 			);
