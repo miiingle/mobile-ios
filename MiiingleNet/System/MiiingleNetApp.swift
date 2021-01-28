@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct MiiingleNetApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
+        let environment = AppEnvironment.bootstrap()
+        
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView(navigationState: environment.navigationState)
         }
     }
 }

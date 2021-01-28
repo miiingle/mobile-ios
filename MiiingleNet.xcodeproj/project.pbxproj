@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F01C3B4825BE92F600296C22 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C3B4725BE92F600296C22 /* RegistrationForm.swift */; };
+		F035519D25C2AC9D00C85652 /* VerificationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035519C25C2AC9D00C85652 /* VerificationForm.swift */; };
+		F03551A225C2ACB700C85652 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03551A125C2ACB700C85652 /* LoginForm.swift */; };
+		F03551A725C2ACEE00C85652 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03551A625C2ACEE00C85652 /* NavigationService.swift */; };
+		F03551AC25C2AD0200C85652 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03551AB25C2AD0200C85652 /* API.swift */; };
+		F03551B125C2ADB600C85652 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03551B025C2ADB600C85652 /* NavigationState.swift */; };
+		F03551BA25C2B71800C85652 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03551B925C2B71800C85652 /* AppEnvironment.swift */; };
 		F094529525BD878B00445C90 /* MiiingleNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094529425BD878B00445C90 /* MiiingleNetApp.swift */; };
 		F094529725BD878B00445C90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094529625BD878B00445C90 /* ContentView.swift */; };
 		F094529925BD878D00445C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F094529825BD878D00445C90 /* Assets.xcassets */; };
@@ -37,6 +43,12 @@
 
 /* Begin PBXFileReference section */
 		F01C3B4725BE92F600296C22 /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
+		F035519C25C2AC9D00C85652 /* VerificationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationForm.swift; sourceTree = "<group>"; };
+		F03551A125C2ACB700C85652 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		F03551A625C2ACEE00C85652 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		F03551AB25C2AD0200C85652 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F03551B025C2ADB600C85652 /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		F03551B925C2B71800C85652 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		F094529125BD878B00445C90 /* MiiingleNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiiingleNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F094529425BD878B00445C90 /* MiiingleNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiiingleNetApp.swift; sourceTree = "<group>"; };
 		F094529625BD878B00445C90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,9 +93,46 @@
 		F01C3B4625BE92AE00296C22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F094529625BD878B00445C90 /* ContentView.swift */,
 				F01C3B4725BE92F600296C22 /* RegistrationForm.swift */,
+				F035519C25C2AC9D00C85652 /* VerificationForm.swift */,
+				F03551A125C2ACB700C85652 /* LoginForm.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F035519625C2AC0300C85652 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F03551B025C2ADB600C85652 /* NavigationState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F035519A25C2AC3200C85652 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F03551A625C2ACEE00C85652 /* NavigationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F035519B25C2AC4900C85652 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F094529D25BD878D00445C90 /* Persistence.swift */,
+				F03551AB25C2AD0200C85652 /* API.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		F03551B825C2B6F500C85652 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F094529425BD878B00445C90 /* MiiingleNetApp.swift */,
+				F03551B925C2B71800C85652 /* AppEnvironment.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 		F094528825BD878B00445C90 = {
@@ -109,11 +158,12 @@
 		F094529325BD878B00445C90 /* MiiingleNet */ = {
 			isa = PBXGroup;
 			children = (
-				F094529625BD878B00445C90 /* ContentView.swift */,
+				F03551B825C2B6F500C85652 /* System */,
+				F035519A25C2AC3200C85652 /* Service */,
+				F035519B25C2AC4900C85652 /* DataAccess */,
 				F01C3B4625BE92AE00296C22 /* Views */,
-				F094529425BD878B00445C90 /* MiiingleNetApp.swift */,
+				F035519625C2AC0300C85652 /* ViewModel */,
 				F094529825BD878D00445C90 /* Assets.xcassets */,
-				F094529D25BD878D00445C90 /* Persistence.swift */,
 				F09452A225BD878D00445C90 /* Info.plist */,
 				F094529F25BD878D00445C90 /* MiiingleNet.xcdatamodeld */,
 				F094529A25BD878D00445C90 /* Preview Content */,
@@ -276,11 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F035519D25C2AC9D00C85652 /* VerificationForm.swift in Sources */,
 				F094529E25BD878D00445C90 /* Persistence.swift in Sources */,
 				F09452A125BD878D00445C90 /* MiiingleNet.xcdatamodeld in Sources */,
+				F03551A725C2ACEE00C85652 /* NavigationService.swift in Sources */,
 				F01C3B4825BE92F600296C22 /* RegistrationForm.swift in Sources */,
+				F03551A225C2ACB700C85652 /* LoginForm.swift in Sources */,
 				F094529725BD878B00445C90 /* ContentView.swift in Sources */,
+				F03551AC25C2AD0200C85652 /* API.swift in Sources */,
 				F094529525BD878B00445C90 /* MiiingleNetApp.swift in Sources */,
+				F03551B125C2ADB600C85652 /* NavigationState.swift in Sources */,
+				F03551BA25C2B71800C85652 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
